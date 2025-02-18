@@ -1,0 +1,12 @@
+{
+	"manifest_version": 3,
+	"name": "WhatsApp chat privacy",
+	"version": "1.0.0",
+	"description": "Blur contacts, images and videos in chat on WhatsApp web.",
+	"content_scripts": [
+		{
+			"matches": ["https://web.whatsapp.com/*"],
+			"css": ["styles/blur.css"]
+		}
+	]
+}
