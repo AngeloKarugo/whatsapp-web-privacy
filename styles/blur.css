@@ -13,3 +13,11 @@
 #main img:not(.emoji):hover {
 	filter: none;
 }
+/* Blur only message texts */
+.copyable-text span:not([data-lexical-text]){
+	filter: blur(2px);
+  }  
+ /* Remove blur on hover */
+.copyable-text span:not([data-lexical-text]):hover {
+	filter: none;
+  }
